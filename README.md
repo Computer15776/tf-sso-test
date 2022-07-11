@@ -14,7 +14,7 @@ Steps (default profile):
 
 For a named profile (i.e. `aws sso login --profile foobar`): 
 
-1. Replace `profile` inside the aws provider from `"default"` to `"foobar"`
+1. Replace `profile` inside the AWS provider (main.tf) from `"default"` to `"foobar"`
 2. Run `aws configure sso` and set `CLI profile name` to `foobar` when prompted
 3. Run `aws sso login --profile foobar`
 4. Run `terraform plan`
